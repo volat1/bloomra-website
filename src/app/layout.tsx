@@ -29,15 +29,20 @@ export const metadata: Metadata = {
     template: "%s | Bloomra",
   },
   description:
-    "A period tracking app that stores everything locally on your device. No cloud, no accounts, no data collection. Track your cycle in complete privacy with Bloomra.",
+    "Period tracking that stays on your phone. No accounts, no cloud, no data collection. Track your cycle in complete privacy with Bloomra.",
   keywords: [
-    "period tracker",
-    "menstrual cycle app",
+    "period tracker app",
     "private period tracking",
     "local storage period app",
-    "cycle awareness",
-    "privacy period tracker",
-    "no cloud period app",
+    "menstrual cycle tracker",
+    "no cloud period tracker",
+    "privacy period app",
+    "offline period tracker",
+    "ios period tracker",
+    "secure menstrual app",
+    "cycle awareness app",
+    "best period tracker privacy",
+    "period tracker no account",
   ],
   authors: [{ name: "Bloomra" }],
   creator: "Bloomra",
@@ -48,9 +53,9 @@ export const metadata: Metadata = {
     locale: "en_US",
     url: "https://bloomra.app",
     siteName: "Bloomra",
-    title: "Bloomra - Private Period Tracking",
+    title: "Bloomra - Period Tracking That Stays On Your Phone",
     description:
-      "Track your cycle with complete privacy. 100% local storage, no cloud, no AI. Your body, your rhythm, your sanctuary.",
+      "No accounts. No cloud. No creepy data collection. Just a beautiful way to understand your cycle.",
     images: [
       {
         url: "/og-image.png",
@@ -62,9 +67,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Bloomra - Private Period Tracking",
+    title: "Bloomra - Period Tracking That Stays On Your Phone",
     description:
-      "Track your cycle with complete privacy. 100% local storage, no cloud, no AI.",
+      "No accounts. No cloud. No creepy data collection. Just a beautiful way to understand your cycle.",
     images: ["/og-image.png"],
   },
   robots: {
@@ -84,6 +89,50 @@ export const metadata: Metadata = {
   },
 };
 
+// JSON-LD Schema for SEO
+const jsonLd = {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://bloomra.app/#organization",
+      name: "Bloomra",
+      url: "https://bloomra.app",
+      logo: {
+        "@type": "ImageObject",
+        url: "https://bloomra.app/logo.png",
+      },
+      description: "Privacy-first period tracking app",
+    },
+    {
+      "@type": "MobileApplication",
+      "@id": "https://bloomra.app/#app",
+      name: "Bloomra",
+      operatingSystem: "iOS",
+      applicationCategory: "HealthApplication",
+      description:
+        "Period tracking that stays on your phone. No accounts, no cloud, no data collection.",
+      offers: {
+        "@type": "Offer",
+        price: "0",
+        priceCurrency: "USD",
+      },
+      creator: {
+        "@id": "https://bloomra.app/#organization",
+      },
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://bloomra.app/#website",
+      url: "https://bloomra.app",
+      name: "Bloomra",
+      publisher: {
+        "@id": "https://bloomra.app/#organization",
+      },
+    },
+  ],
+};
+
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -91,6 +140,12 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className="scroll-smooth">
+      <head>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+        />
+      </head>
       <body
         className={`${playfair.variable} ${sourceSans.variable} ${plusJakarta.variable} antialiased bg-[var(--background)] text-[var(--foreground)]`}
       >

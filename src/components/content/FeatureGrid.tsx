@@ -12,9 +12,9 @@ const features = [
         <path d="M12 8C14.2 8 16 9.8 16 12C16 14.2 14.2 16 12 16" strokeDasharray="3 3"/>
       </svg>
     ),
-    title: "Garden Dashboard",
+    title: "Your Cycle at a Glance",
     description:
-      "Watch your patterns unfold like seasons in a garden. A beautiful, intuitive view of where you are in your cycle.",
+      "See exactly where you are. Beautifully visualized, instantly understood.",
     color: "var(--season-spring-primary)",
     bg: "var(--season-spring-bg)",
   },
@@ -25,9 +25,9 @@ const features = [
         <path d="M12 6v6l4 2" strokeLinecap="round"/>
       </svg>
     ),
-    title: "Seasonal Rhythms",
+    title: "Four Inner Seasons",
     description:
-      "Inner Winter, Spring, Summer, Autumn. Understand your energy through seasonal metaphors, not clinical jargon.",
+      "Winter, Spring, Summer, Autumn. Your energy in a language that makes sense.",
     color: "var(--season-summer-primary)",
     bg: "var(--season-summer-bg)",
   },
@@ -40,9 +40,9 @@ const features = [
         <circle cx="15" cy="10" r="1" fill="currentColor"/>
       </svg>
     ),
-    title: "Ritualized Logging",
+    title: "30-Second Check-in",
     description:
-      "Logging that feels like a quiet moment, not homework. A brief meditation of noticing how you feel today.",
+      "Quick taps, not quizzes. Log how you feel in less time than reading this.",
     color: "var(--season-autumn-primary)",
     bg: "var(--season-autumn-bg)",
   },
@@ -54,9 +54,9 @@ const features = [
         <circle cx="12" cy="12" r="9" strokeDasharray="3 3"/>
       </svg>
     ),
-    title: "Tree Ring History",
+    title: "Patterns Over Time",
     description:
-      "Your cycles visualized as tree rings. Each cycle adds another layer to your story. Patterns over time, effortlessly.",
+      "Each cycle tells a story. Spot trends. Know yourself better.",
     color: "var(--season-winter-primary)",
     bg: "var(--season-winter-bg)",
   },
@@ -66,9 +66,9 @@ const features = [
         <path d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z" strokeLinecap="round" strokeLinejoin="round"/>
       </svg>
     ),
-    title: "100% Local Storage",
+    title: "Your Phone. Your Data.",
     description:
-      "Your data never leaves your hands. No cloud, no sync, no servers. Delete the app, delete your data—completely.",
+      "Nothing leaves your device. We couldn't see it even if we wanted to.",
     color: "var(--privacy-trust)",
     bg: "var(--season-spring-bg)",
   },
@@ -87,10 +87,10 @@ export function FeatureGrid() {
           className="text-center mb-16"
         >
           <h2 className="font-serif text-3xl md:text-4xl font-bold text-[var(--ink-primary)] mb-4">
-            Track gently. Understand naturally.
+            Everything you need. Nothing you don&apos;t.
           </h2>
           <p className="text-lg text-[var(--ink-secondary)] max-w-2xl mx-auto">
-            Features designed for peace, not anxiety. A sanctuary for cycle awareness.
+            Simple, beautiful, private. Period tracking that respects your time and your data.
           </p>
         </motion.div>
 

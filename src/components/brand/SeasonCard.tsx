@@ -15,7 +15,7 @@ const seasonData = {
   winter: {
     name: "Inner Winter",
     phase: "Menstrual",
-    description: "A time for rest, reflection, and gentle self-care",
+    description: "Rest. Reset. Your body is doing important work.",
     gradient: "gradient-winter",
     primaryColor: "var(--season-winter-primary)",
     icon: (
@@ -29,7 +29,7 @@ const seasonData = {
   spring: {
     name: "Inner Spring",
     phase: "Follicular",
-    description: "Energy returns, creativity blooms, new beginnings",
+    description: "Energy rises. Ideas spark. Everything feels possible.",
     gradient: "gradient-spring",
     primaryColor: "var(--season-spring-primary)",
     icon: (
@@ -43,7 +43,7 @@ const seasonData = {
   summer: {
     name: "Inner Summer",
     phase: "Ovulation",
-    description: "Peak energy, radiance, connection, and expression",
+    description: "You're on. Social, sharp, radiant. Ride this wave.",
     gradient: "gradient-summer",
     primaryColor: "var(--season-summer-primary)",
     icon: (
@@ -57,7 +57,7 @@ const seasonData = {
   autumn: {
     name: "Inner Autumn",
     phase: "Luteal",
-    description: "Nesting energy, grounding, preparing for rest",
+    description: "Slow down. Nest. Your body knows what's coming.",
     gradient: "gradient-autumn",
     primaryColor: "var(--season-autumn-primary)",
     icon: (

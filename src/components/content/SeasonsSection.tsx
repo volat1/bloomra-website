@@ -16,11 +16,10 @@ export function SeasonsSection() {
           className="text-center mb-16"
         >
           <h2 className="font-serif text-3xl md:text-4xl font-bold text-[var(--ink-primary)] mb-4">
-            Your cycle as four inner seasons
+            Understand your energy, not just your dates
           </h2>
           <p className="text-lg text-[var(--ink-secondary)] max-w-2xl mx-auto">
-            Not hormones or medical phases—just a gentle way to understand your energy,
-            mood, and needs throughout the month.
+            Four inner seasons. A natural way to understand how you feel throughout your cycle.
           </p>
         </motion.div>
 
@@ -40,7 +39,7 @@ export function SeasonsSection() {
           transition={{ delay: 0.5 }}
           className="text-center text-sm text-[var(--ink-tertiary)] mt-12 max-w-xl mx-auto"
         >
-          These seasonal metaphors are for self-reflection, not medical diagnosis.
+          These seasons are for self-reflection, not medical diagnosis.
           Bloomra helps you notice patterns—it doesn&apos;t predict or diagnose.
         </motion.p>
       </div>

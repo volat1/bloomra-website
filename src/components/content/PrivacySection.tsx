@@ -12,9 +12,9 @@ const privacyPromises = [
         <path d="M4 12h4M16 12h4" strokeLinecap="round"/>
       </svg>
     ),
-    title: "Zero Cloud Storage",
+    title: "Nothing in the cloud",
     description:
-      "Your data lives on your device. Period. No accounts, no cloud backup, no syncing to servers. We couldn't access it even if we wanted to.",
+      "Your data lives on your phone. That's it. No servers, no backups, no uploads.",
   },
   {
     icon: (
@@ -24,9 +24,9 @@ const privacyPromises = [
         <path d="M3 3l18 18" strokeLinecap="round"/>
       </svg>
     ),
-    title: "Zero Tracking",
+    title: "No analytics. Period.",
     description:
-      "No analytics. No usage tracking. No \"anonymized\" data collection. We have no idea how you use Bloomra—by design.",
+      "We have no idea how you use Bloomra. We didn't build tracking. It doesn't exist.",
   },
   {
     icon: (
@@ -35,9 +35,9 @@ const privacyPromises = [
         <path d="M6 18L18 6" strokeLinecap="round"/>
       </svg>
     ),
-    title: "Zero Data Sales",
+    title: "You're not the product",
     description:
-      "Your data isn't our product. You aren't our product. We make money when you buy the app. No advertisers, no data brokers, no partners.",
+      "We make money when you buy the app. No advertisers. No data brokers.",
   },
   {
     icon: (
@@ -45,9 +45,9 @@ const privacyPromises = [
         <path d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" strokeLinecap="round" strokeLinejoin="round"/>
       </svg>
     ),
-    title: "Verifiable Privacy",
+    title: "Don't trust us. Verify.",
     description:
-      "Don't trust us—verify us. Check your network traffic: we send nothing. Delete the app: your data is gone. True privacy you can prove.",
+      "Check your network traffic: silence. Delete the app: gone forever.",
   },
 ];
 
@@ -76,13 +76,12 @@ export function PrivacySection() {
             Privacy by Design
           </Badge>
           <h2 className="font-serif text-3xl md:text-4xl font-bold text-[var(--ink-primary)] mb-4">
-            Privacy isn&apos;t a feature.
+            Finally, an app that
             <br />
-            <span className="text-[var(--season-spring-primary)]">It&apos;s the foundation.</span>
+            <span className="text-[var(--season-spring-primary)]">minds its own business.</span>
           </h2>
           <p className="text-lg text-[var(--ink-secondary)] max-w-2xl mx-auto">
-            Other period apps sell your data, show you ads, or store your most intimate information on servers you can&apos;t see.
-            Bloomra was built differently.
+            Other period apps collect your data, show you ads, or store your intimate information on servers you can&apos;t see. We built Bloomra to be different.
           </p>
         </motion.div>
 
