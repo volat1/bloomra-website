@@ -234,3 +234,59 @@ html {
   margin-inline: auto;
   padding-inline: clamp(1rem, 5vw, 2rem);
 }
+
+/* Seasonal breathing animations */
+@keyframes breathe {
+  0%, 100% {
+    opacity: 0.3;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.5;
+    transform: scale(1.03);
+  }
+}
+
+@keyframes drift {
+  0%, 100% {
+    transform: translate(0, 0);
+  }
+  33% {
+    transform: translate(10px, -15px);
+  }
+  66% {
+    transform: translate(-5px, 10px);
+  }
+}
+
+@keyframes pulse-soft {
+  0%, 100% {
+    opacity: 0.4;
+  }
+  50% {
+    opacity: 0.6;
+  }
+}
+
+.animate-breathe {
+  animation: breathe 15s ease-in-out infinite;
+}
+
+.animate-drift {
+  animation: drift 30s ease-in-out infinite;
+}
+
+.animate-pulse-soft {
+  animation: pulse-soft 8s ease-in-out infinite;
+}
+
+/* Multi-season gradient */
+.gradient-seasons {
+  background: linear-gradient(
+    135deg,
+    var(--season-spring-bg) 0%,
+    var(--season-summer-bg) 33%,
+    var(--season-autumn-bg) 66%,
+    var(--season-winter-bg) 100%
+  );
+}

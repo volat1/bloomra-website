@@ -14,7 +14,7 @@ const privacyPromises = [
     ),
     title: "Nothing in the cloud",
     description:
-      "Your data lives on your phone. That's it. No servers, no backups, no uploads.",
+      "Your data lives on your phone. That's it. No servers, no backups, no uploads. We literally can't see your data—even if we wanted to.",
   },
   {
     icon: (
@@ -26,18 +26,17 @@ const privacyPromises = [
     ),
     title: "No analytics. Period.",
     description:
-      "We have no idea how you use Bloomra. We didn't build tracking. It doesn't exist.",
+      "We have no idea how you use Bloomra. We didn't build tracking because we don't need it. Your behavior is none of our business.",
   },
   {
     icon: (
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" className="w-6 h-6">
         <path d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" strokeLinecap="round"/>
-        <path d="M6 18L18 6" strokeLinecap="round"/>
       </svg>
     ),
-    title: "You're not the product",
+    title: "Honest subscription model",
     description:
-      "We make money when you buy the app. No advertisers. No data brokers.",
+      "We make money when you subscribe after your free trial—not from selling your intimate information to advertisers or data brokers.",
   },
   {
     icon: (
@@ -47,17 +46,19 @@ const privacyPromises = [
     ),
     title: "Don't trust us. Verify.",
     description:
-      "Check your network traffic: silence. Delete the app: gone forever.",
+      "Check your network traffic: silence. Delete the app: gone forever. Your skepticism is welcome here.",
   },
 ];
 
 export function PrivacySection() {
   return (
     <section id="privacy" className="py-24 md:py-32 bg-[var(--background-card)] relative overflow-hidden">
-      {/* Background decoration */}
+      {/* Background decoration - enhanced vibrancy */}
+      <div className="absolute inset-0 gradient-spring opacity-15" />
       <div className="absolute top-0 left-0 w-full h-full">
-        <div className="absolute top-1/4 -left-32 w-64 h-64 rounded-full bg-[var(--lotus-lavender)] opacity-5 blur-3xl" />
-        <div className="absolute bottom-1/4 -right-32 w-96 h-96 rounded-full bg-[var(--season-spring-accent)] opacity-5 blur-3xl" />
+        <div className="absolute top-1/4 -left-32 w-72 h-72 rounded-full bg-[var(--lotus-lavender)] opacity-20 blur-3xl animate-drift" />
+        <div className="absolute bottom-1/4 -right-32 w-96 h-96 rounded-full bg-[var(--season-spring-accent)] opacity-20 blur-3xl animate-drift" style={{ animationDelay: '-15s' }} />
+        <div className="absolute top-1/2 left-1/3 w-48 h-48 rounded-full bg-[var(--season-summer-accent)] opacity-15 blur-3xl animate-pulse-soft" />
       </div>
 
       <div className="container-wide relative z-10">
@@ -81,7 +82,8 @@ export function PrivacySection() {
             <span className="text-[var(--season-spring-primary)]">minds its own business.</span>
           </h2>
           <p className="text-lg text-[var(--ink-secondary)] max-w-2xl mx-auto">
-            Other period apps collect your data, show you ads, or store your intimate information on servers you can&apos;t see. We built Bloomra to be different.
+            Other period apps collect your data, show you ads, or store your intimate
+            information on servers you can&apos;t see. We built Bloomra to be radically different.
           </p>
         </motion.div>
 
@@ -121,7 +123,7 @@ export function PrivacySection() {
         >
           <div className="inline-flex items-center gap-2 px-6 py-3 bg-[var(--background)] rounded-full border border-[var(--stroke-light)] text-sm text-[var(--ink-secondary)]">
             <svg className="w-5 h-5 text-[var(--season-autumn-primary)]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z" />
             </svg>
             Your cycle is nobody&apos;s business but yours
           </div>

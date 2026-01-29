@@ -16,6 +16,7 @@ const seasonData = {
     name: "Inner Winter",
     phase: "Menstrual",
     description: "Rest. Reset. Your body is doing important work.",
+    wisdom: "The need to withdraw is wisdom, not weakness.",
     gradient: "gradient-winter",
     primaryColor: "var(--season-winter-primary)",
     icon: (
@@ -30,6 +31,7 @@ const seasonData = {
     name: "Inner Spring",
     phase: "Follicular",
     description: "Energy rises. Ideas spark. Everything feels possible.",
+    wisdom: "Your momentum is building. Trust it.",
     gradient: "gradient-spring",
     primaryColor: "var(--season-spring-primary)",
     icon: (
@@ -44,6 +46,7 @@ const seasonData = {
     name: "Inner Summer",
     phase: "Ovulation",
     description: "You're on. Social, sharp, radiant. Ride this wave.",
+    wisdom: "This is your time to shine and be seen.",
     gradient: "gradient-summer",
     primaryColor: "var(--season-summer-primary)",
     icon: (
@@ -58,6 +61,7 @@ const seasonData = {
     name: "Inner Autumn",
     phase: "Luteal",
     description: "Slow down. Nest. Your body knows what's coming.",
+    wisdom: "Heightened emotions are real and valid.",
     gradient: "gradient-autumn",
     primaryColor: "var(--season-autumn-primary)",
     icon: (
@@ -103,13 +107,18 @@ export function SeasonCard({ season, className, delay = 0 }: SeasonCardProps) {
       <p className="text-sm text-[var(--ink-secondary)] mb-3 font-medium">
         {data.phase} Phase
       </p>
-      <p className="text-sm text-[var(--ink-secondary)] leading-relaxed">
+      <p className="text-sm text-[var(--ink-secondary)] leading-relaxed mb-3">
         {data.description}
       </p>
 
-      {/* Decorative corner */}
+      {/* Wisdom whisper */}
+      <p className="text-xs text-[var(--ink-tertiary)] italic border-t border-[var(--stroke-light)] pt-3 mt-auto">
+        "{data.wisdom}"
+      </p>
+
+      {/* Decorative corner - increased opacity */}
       <div
-        className="absolute top-0 right-0 w-24 h-24 opacity-20"
+        className="absolute top-0 right-0 w-28 h-28 opacity-40"
         style={{
           background: `radial-gradient(circle at top right, ${data.primaryColor}, transparent 70%)`,
         }}

@@ -3,6 +3,7 @@ import {
   Hero,
   FeatureGrid,
   SeasonsSection,
+  WisdomSection,
   PrivacySection,
   CTASection,
 } from "@/components/content";
@@ -14,6 +15,7 @@ export default function Home() {
       <main>
         <Hero />
         <SeasonsSection />
+        <WisdomSection />
         <FeatureGrid />
         <PrivacySection />
         <CTASection />
