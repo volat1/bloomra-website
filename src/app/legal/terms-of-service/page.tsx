@@ -117,7 +117,23 @@ export default function TermsOfServicePage() {
         <li>We cannot recover data after you delete the App</li>
       </ul>
 
-      <h2>7. Disclaimer of Warranties</h2>
+      <h2>7. Subscriptions and Payments</h2>
+      <p>
+        Bloomra offers premium features through optional subscription plans with a
+        3-month free trial. By subscribing:
+      </p>
+      <ul>
+        <li>Payment is processed by Apple through your Apple ID</li>
+        <li>Subscriptions auto-renew unless cancelled at least 24 hours before renewal</li>
+        <li>You can manage or cancel subscriptions in your iOS Settings</li>
+        <li>Apple handles all billing, refunds, and payment processing</li>
+      </ul>
+      <p>
+        For complete subscription details, pricing, and cancellation instructions,
+        see our <a href="/legal/subscription-terms">Subscription Terms</a>.
+      </p>
+
+      <h2>8. Disclaimer of Warranties</h2>
       <p>
         THE APP IS PROVIDED &quot;AS IS&quot; AND &quot;AS AVAILABLE&quot; WITHOUT WARRANTIES OF ANY KIND,
         EITHER EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO:
@@ -134,7 +150,7 @@ export default function TermsOfServicePage() {
         your menstrual cycle.
       </p>
 
-      <h2>8. Limitation of Liability</h2>
+      <h2>9. Limitation of Liability</h2>
       <p>
         TO THE MAXIMUM EXTENT PERMITTED BY LAW, BLOOMRA AND ITS AFFILIATES SHALL NOT BE
         LIABLE FOR ANY INDIRECT, INCIDENTAL, SPECIAL, CONSEQUENTIAL, OR PUNITIVE DAMAGES,
@@ -151,14 +167,14 @@ export default function TermsOfServicePage() {
         exceed the amount you paid for the App in the twelve months preceding the claim.
       </p>
 
-      <h2>9. Indemnification</h2>
+      <h2>10. Indemnification</h2>
       <p>
         You agree to indemnify and hold harmless Bloomra, its officers, directors,
         employees, and agents from any claims, damages, losses, or expenses arising
         from your use of the App or violation of these Terms.
       </p>
 
-      <h2>10. Termination</h2>
+      <h2>11. Termination</h2>
       <p>
         You may stop using the App at any time by uninstalling it. We reserve the right
         to terminate or suspend access to the App for violations of these Terms. Upon
@@ -166,21 +182,21 @@ export default function TermsOfServicePage() {
         the App.
       </p>
 
-      <h2>11. Changes to Terms</h2>
+      <h2>12. Changes to Terms</h2>
       <p>
         We may update these Terms from time to time. If we make material changes, we will
         notify you through the App or our website. Your continued use of the App after
         such changes constitutes acceptance of the new Terms.
       </p>
 
-      <h2>12. Governing Law</h2>
+      <h2>13. Governing Law</h2>
       <p>
         These Terms shall be governed by and construed in accordance with the laws of
         the jurisdiction in which Bloomra is established, without regard to conflict
         of law principles.
       </p>
 
-      <h2>13. Dispute Resolution</h2>
+      <h2>14. Dispute Resolution</h2>
       <p>
         Any disputes arising from these Terms or your use of the App shall first be
         attempted to be resolved through good-faith negotiation. If negotiation fails,
@@ -188,19 +204,22 @@ export default function TermsOfServicePage() {
         rules of the applicable arbitration association.
       </p>
 
-      <h2>14. Severability</h2>
+      <h2>15. Severability</h2>
       <p>
         If any provision of these Terms is found to be unenforceable, the remaining
         provisions shall continue in full force and effect.
       </p>
 
-      <h2>15. Entire Agreement</h2>
+      <h2>16. Entire Agreement</h2>
       <p>
-        These Terms, together with our Privacy Policy, constitute the entire agreement
-        between you and Bloomra regarding your use of the App.
+        These Terms, together with our{" "}
+        <a href="/legal/privacy-policy">Privacy Policy</a>,{" "}
+        <a href="/legal/eula">End User License Agreement</a>, and{" "}
+        <a href="/legal/subscription-terms">Subscription Terms</a>, constitute the
+        entire agreement between you and Bloomra regarding your use of the App.
       </p>
 
-      <h2>16. Contact</h2>
+      <h2>17. Contact</h2>
       <p>
         For questions about these Terms, please contact us at:
       </p>

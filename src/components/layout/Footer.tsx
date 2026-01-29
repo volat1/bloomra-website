@@ -12,10 +12,13 @@ const footerLinks = {
     { href: "/support", label: "Help Center" },
     { href: "/support#faq", label: "FAQ" },
     { href: "/support#contact", label: "Contact" },
+    { href: "/support/data-deletion", label: "Delete Your Data" },
   ],
   legal: [
     { href: "/legal/privacy-policy", label: "Privacy Policy" },
     { href: "/legal/terms-of-service", label: "Terms of Service" },
+    { href: "/legal/eula", label: "EULA" },
+    { href: "/legal/subscription-terms", label: "Subscription Terms" },
   ],
 };
 

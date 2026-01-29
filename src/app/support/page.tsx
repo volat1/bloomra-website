@@ -112,6 +112,30 @@ const faqItems = [
       </>
     ),
   },
+  {
+    question: "How do I manage or cancel my subscription?",
+    answer: (
+      <>
+        Go to <strong>Settings</strong> on your iPhone → tap your <strong>name</strong> at
+        the top → <strong>Subscriptions</strong> → <strong>Bloomra</strong>. From here you
+        can change your plan or tap &quot;Cancel Subscription.&quot; Remember to cancel at
+        least 24 hours before your renewal date to avoid being charged. Cancellation takes
+        effect at the end of your current billing period.
+      </>
+    ),
+  },
+  {
+    question: "How do I request a refund?",
+    answer: (
+      <>
+        Since Apple processes all Bloomra payments, refunds must be requested through Apple.
+        Visit <a href="https://reportaproblem.apple.com" target="_blank" rel="noopener noreferrer" className="text-[var(--season-spring-primary)] hover:underline">reportaproblem.apple.com</a>,
+        sign in with your Apple ID, find your Bloomra purchase, and select &quot;Request a
+        refund.&quot; We don&apos;t have access to your payment information, so we cannot
+        process refunds directly.
+      </>
+    ),
+  },
 ];
 
 export default function SupportPage() {
@@ -141,12 +165,66 @@ export default function SupportPage() {
               </div>
             </div>
 
-            {/* Contact Section */}
-            <div id="contact">
-              <h2 className="font-serif text-2xl font-semibold text-[var(--ink-primary)] mb-6">
-                Contact Us
-              </h2>
-              <div className="bg-[var(--background-card)] rounded-2xl p-6 md:p-8 sticky top-24">
+            {/* Sidebar */}
+            <div className="space-y-8" id="contact">
+              {/* Quick Links */}
+              <div>
+                <h2 className="font-serif text-2xl font-semibold text-[var(--ink-primary)] mb-6">
+                  Quick Links
+                </h2>
+                <div className="bg-[var(--background-card)] rounded-2xl p-6">
+                  <ul className="space-y-3">
+                    <li>
+                      <a
+                        href="/support/data-deletion"
+                        className="flex items-center gap-3 text-[var(--ink-secondary)] hover:text-[var(--ink-primary)] transition-colors"
+                      >
+                        <div className="w-8 h-8 rounded-lg bg-[var(--season-spring-bg)] flex items-center justify-center flex-shrink-0">
+                          <svg className="w-4 h-4 text-[var(--season-spring-primary)]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16" />
+                          </svg>
+                        </div>
+                        <span className="text-sm">Delete Your Data</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        href="/legal/subscription-terms#cancel"
+                        className="flex items-center gap-3 text-[var(--ink-secondary)] hover:text-[var(--ink-primary)] transition-colors"
+                      >
+                        <div className="w-8 h-8 rounded-lg bg-[var(--season-summer-bg)] flex items-center justify-center flex-shrink-0">
+                          <svg className="w-4 h-4 text-[var(--season-summer-primary)]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 10h18M7 15h1m4 0h1m-7 4h12a3 3 0 003-3V8a3 3 0 00-3-3H6a3 3 0 00-3 3v8a3 3 0 003 3z" />
+                          </svg>
+                        </div>
+                        <span className="text-sm">Manage Subscription</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        href="https://reportaproblem.apple.com"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="flex items-center gap-3 text-[var(--ink-secondary)] hover:text-[var(--ink-primary)] transition-colors"
+                      >
+                        <div className="w-8 h-8 rounded-lg bg-[var(--season-autumn-bg)] flex items-center justify-center flex-shrink-0">
+                          <svg className="w-4 h-4 text-[var(--season-autumn-primary)]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 10h10a8 8 0 018 8v2M3 10l6 6m-6-6l6-6" />
+                          </svg>
+                        </div>
+                        <span className="text-sm">Request Refund (Apple)</span>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+              {/* Contact Section */}
+              <div>
+                <h2 className="font-serif text-2xl font-semibold text-[var(--ink-primary)] mb-6">
+                  Contact Us
+                </h2>
+                <div className="bg-[var(--background-card)] rounded-2xl p-6 md:p-8 sticky top-24">
                 <p className="text-[var(--ink-secondary)] mb-6">
                   Can&apos;t find what you&apos;re looking for? We&apos;re here to help.
                 </p>
@@ -191,12 +269,13 @@ export default function SupportPage() {
                   Send us an email
                 </Button>
 
-                {/* Privacy note */}
-                <p className="text-xs text-[var(--ink-tertiary)] mt-6">
-                  We handle support requests with the same privacy-first approach as our
-                  app. We&apos;ll never ask for your cycle data and will delete your email
-                  after resolving your issue.
-                </p>
+                  {/* Privacy note */}
+                  <p className="text-xs text-[var(--ink-tertiary)] mt-6">
+                    We handle support requests with the same privacy-first approach as our
+                    app. We&apos;ll never ask for your cycle data and will delete your email
+                    after resolving your issue.
+                  </p>
+                </div>
               </div>
             </div>
           </div>
